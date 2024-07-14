@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent a Car</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">CarServices</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#rent">Rent a Car</a></li>
+            <li><a href="buy.html">Buy a Car</a></li>
+            <li><a href="sell.html">Sell a Car</a></li>
+            <li><a href="driver.html">Hire a Driver</a></li>
+            <li><a href="book.html">Book for Travel</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Rent a Car</h1>
+        <p>Find the best rental cars at affordable prices.</p>
+    </header>
+
+    <section id="rent">
+        <h2>Available Cars</h2>
+        <div class="car-list">
+            <div class="car">
+                <img src="https://images.unsplash.com/photo-1516442719524-a603408c90cb" alt="Car 1">
+                <h3>Car Model 1</h3>
+                <p>$50/day</p>
+                <button class="rent-btn" onclick="rentCar('Car Model 1')">Rent Now</button>
+            </div>
+            <div class="car">
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" alt="Car 2">
+                <h3>Car Model 2</h3>
+                <p>$60/day</p>
+                <button class="rent-btn" onclick="rentCar('Car Model 2')">Rent Now</button>
+            </div>
+            <div class="car">
+                <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf" alt="Car 3">
+                <h3>Car Model 3</h3>
+                <p>$70/day</p>
+                <button class="rent-btn" onclick="rentCar('Car Model 3')">Rent Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="form-section" class="hidden">
+        <h2>Rent Car Form</h2>
+        <form id="rent-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="model">Car Model:</label>
+            <input type="text" id="model" name="model" readonly>
+            <label for="days">Number of Days:</label>
+            <input type="number" id="days" name="days" min="1" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CarServices. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
